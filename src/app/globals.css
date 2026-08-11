@@ -41,7 +41,170 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.selected-row {
+  background: #eef4ff;
+  cursor: pointer;
+}
 
+.selected-row td {
+  font-weight: 600;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+/* charts css */
+
+.trading-chart {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  margin: 0;
+}
+
+.chart-header p {
+  margin: 5px 0 0;
+  color: #777;
+}
+
+.chart-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.chart-toggle button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.chart-toggle button.active {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+.custom-tooltip {
+  padding: 12px;
+  min-width: 170px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.tooltip-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tooltip-time {
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.timeframe-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.timeframe-container span {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.timeframe-container button {
+  padding: 7px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.timeframe-container button.active {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+.current-price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.price-change {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.positive {
+  color: #16a34a;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.neutral {
+  color: #666;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+}
+
+#table1 {
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+.positive {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.negative {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.neutral {
+  color: #666;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
